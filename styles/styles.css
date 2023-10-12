@@ -68,3 +68,15 @@ body {
   line-height: 24px;
   color: #fb6d3a;
 }
+
+/* Stiluri pentru ecrane mici (mobil) */
+@media (max-width: 768px) {
+  .main-section {
+    width: 100%;
+    flex-direction: column;
+  }
+  .right-section {
+    padding: 20px;
+  }
+  /* Alte stiluri pentru ecrane mici */
+}
