@@ -16,6 +16,7 @@ body {
   flex-direction: row-reverse;
   width: 1200px;
   margin: 40px auto;
+  background-color: azure;
 }
 
 .about-me-section {
@@ -33,6 +34,35 @@ body {
   background-color: ;
 }
 
+.work-experience,
+.projects,
+.education,
+.additional-education {
+  background-color: rgb(167, 218, 200);
+}
 .sidebar-section {
-  background-color: #1e2939;
+  background-color: rgb(167, 218, 200);
+  width: 370px;
+  padding: 50px;
+}
+
+.contacts {
+  color: white;
+}
+
+.contacts-type {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.contacts-value {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fb6d3a;
 }
