@@ -32,6 +32,7 @@ body {
 .education,
 .additional-education {
   background-color: rgb(167, 218, 200);
+  padding-bottom: 5px;
 }
 
 .education-item,
@@ -46,19 +47,25 @@ body {
   padding: 50px;
 }
 
-.contacts-type {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  color: #fff;
-  margin-right: 10px;
-}
-
 .contacts-value {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   color: #fb6d3a;
+}
+
+.contacts-phone-icon {
+  background-color: white;
+  font-size: 50px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  margin-top: 5px;
 }
