@@ -71,24 +71,25 @@ body {
 
 /* Stiluri pentru ecrane mici (mobil) */
 @media (max-width: 768px) {
+  .right-section {
+    padding: 20px;
+  }
+
   .main-section {
     width: 100%;
     flex-direction: row-reverse;
   }
-  .right-section {
-    padding: 20px;
-  }
-  /* Alte stiluri pentru ecrane mici */
 }
 
 /* Stiluri pentru ecrane de dimensiuni medii (tablete) */
 @media (min-width: 769px) and (max-width: 1024px) {
+  .right-section {
+    padding: 20px;
+  }
+
   .main-section {
     width: 100%;
     flex-direction: row-reverse;
-  }
-  .right-section {
-    padding: 20px;
   }
 }
 
