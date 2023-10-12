@@ -73,10 +73,32 @@ body {
 @media (max-width: 768px) {
   .main-section {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row-reverse;
   }
   .right-section {
     padding: 20px;
   }
   /* Alte stiluri pentru ecrane mici */
 }
+
+/* Stiluri pentru ecrane de dimensiuni medii (tablete) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-section {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .right-section {
+    padding: 20px;
+  }
+}
+
+/* Stiluri pentru ecrane mai mari (laptop) */
+/* @media (min-width: 1025px) {
+  .main-section {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .right-section {
+    padding: 20px;
+  }
+} */
