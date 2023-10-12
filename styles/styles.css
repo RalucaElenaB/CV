@@ -3,35 +3,27 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.right-section {
-  padding-left: 88px;
-}
-.about-me-profession {
-  font-size: 14px;
-  color: black;
-}
-
 .main-section {
   display: flex;
   flex-direction: row-reverse;
   width: 1200px;
   margin: 40px auto;
+  border: 2px solid black;
+}
+
+.right-section {
+  padding-left: 50px;
+  padding-right: 50px;
   background-color: azure;
+  border-left: 2px solid black;
 }
 
 .about-me-section {
   padding-bottom: 15px;
   padding-top: 15px;
-  padding-right: 15px;
-  margin-bottom: 50px;
-}
-
-.projects-sections {
-  background-color: ;
-}
-
-.work-experience-section {
-  background-color: ;
+  padding-right: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .work-experience,
@@ -40,13 +32,23 @@ body {
 .additional-education {
   background-color: rgb(167, 218, 200);
 }
+
+.education-item,
+.work-experience-item {
+  color: #fb6d3a;
+  font-weight: bold;
+}
+
 .sidebar-section {
   background-color: rgb(167, 218, 200);
   width: 370px;
   padding: 50px;
 }
 
-.contacts {
+.contacts,
+.tech-skills,
+.soft-skills,
+.languages {
   color: white;
 }
 
