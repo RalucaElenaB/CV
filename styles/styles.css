@@ -1,6 +1,7 @@
 body {
   background-color: #e5e5e5;
   font-family: "Montserrat", sans-serif;
+  text-align: justify;
 }
 
 .main-section {
@@ -21,7 +22,7 @@ body {
 .about-me-section {
   padding-bottom: 15px;
   padding-top: 15px;
-  padding-right: 50px;
+  /* padding-right: 50px; */
   margin-bottom: 25px;
   margin-top: 25px;
 }
@@ -43,13 +44,6 @@ body {
   background-color: rgb(167, 218, 200);
   width: 370px;
   padding: 50px;
-}
-
-.contacts,
-.tech-skills,
-.soft-skills,
-.languages {
-  color: white;
 }
 
 .contacts-type {
