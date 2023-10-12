@@ -68,24 +68,3 @@ body {
   line-height: 24px;
   color: #fb6d3a;
 }
-
-/* Stiluri pentru ecrane mici (mobil) */
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
-
-/* Stiluri pentru ecrane de dimensiuni medii (tablete) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    width: 100%;
-  }
-}
-
-/* Stiluri pentru ecrane mai mari (laptop) */
-@media (min-width: 1025px) {
-  .container {
-    width: 100%;
-  }
-}
