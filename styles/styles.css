@@ -27,6 +27,11 @@ body {
   margin-top: 25px;
 }
 
+.name,
+.position {
+  text-align: center;
+  text-transform: uppercase;
+}
 .work-experience,
 .projects,
 .education,
@@ -68,4 +73,7 @@ body {
   stroke: currentColor;
   fill: currentColor;
   margin-top: 5px;
+}
+.items {
+  font-weight: bold;
 }
