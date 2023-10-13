@@ -32,6 +32,20 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
+.position {
+  animation: intrareDinStanga 1s ease-out;
+}
+
+@keyframes intrareDinStanga {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .work-experience,
 .projects,
 .education,
