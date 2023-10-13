@@ -60,6 +60,10 @@ body {
   font-weight: bold;
 }
 
+.work-experience-item {
+  display: inline;
+}
+
 .sidebar-section {
   background-color: rgb(167, 218, 200);
   width: 370px;
@@ -90,4 +94,10 @@ body {
 }
 .items {
   font-weight: bold;
+}
+
+.item {
+  font-weight: bold;
+  display: inline;
+  padding-right: 100;
 }
