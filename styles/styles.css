@@ -1,6 +1,25 @@
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    border: none;
+    padding: 10px;
+  }
+
+  .sidebar-section,
+  .right-section {
+    width: 100% !important;
+    padding: 15px !important;
+    border: none !important;
+  }
+
+  .item {
+    display: block;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  body {
+    padding: 10px;
   }
 }
 
@@ -9,13 +28,14 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
-
 .main-section {
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
+  width: 100%; /* înlocuiește 1200px */
+  max-width: 1200px; /* opțional, pentru desktop */
   margin: 50px auto;
   border: 2px solid black;
+  flex-wrap: wrap; /* adaugă pentru mobil */
 }
 
 .right-section {
