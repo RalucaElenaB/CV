@@ -1,25 +1,36 @@
 @media (max-width: 768px) {
   .main-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
     border: none;
-    padding: 10px;
   }
 
-  .sidebar-section,
+  .sidebar-section {
+    order: -1; /* face ca sidebarul să apară primul */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
   .right-section {
-    width: 100% !important;
-    padding: 15px !important;
-    border: none !important;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
   }
 
   .item {
     display: block;
     padding-right: 0;
     margin-bottom: 10px;
-  }
-
-  body {
-    padding: 10px;
   }
 }
 
@@ -28,13 +39,15 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
+
 .main-section {
   display: flex;
-  flex-direction: row-reverse;
-  width: 100%; /* înlocuiește 1200px */
-  max-width: 1200px; /* opțional, pentru desktop */
+  flex-direction: row-reverse; /* rămâne pentru desktop */
+  width: 100%;
+  max-width: 1200px;
   margin: 50px auto;
   border: 2px solid black;
+  box-sizing: border-box;
 }
 
 .right-section {
