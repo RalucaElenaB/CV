@@ -1,53 +1,20 @@
-@media (max-width: 768px) {
-  .main-section {
-    flex-direction: column-reverse;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    border: none;
-  }
-
-  .sidebar-section {
-    order: -1; /* face ca sidebarul să apară primul */
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .right-section {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    border: none;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #e5e5e5;
-  }
-
-  .item {
-    display: block;
-    padding-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
+/* ===================== BASE STYLES ===================== */
 body {
   background-color: #e5e5e5;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
+  margin: 0;
+  padding: 0;
 }
 
 .main-section {
   display: flex;
-  flex-direction: row-reverse; /* rămâne pentru desktop */
+  flex-direction: row-reverse;
   width: 100%;
   max-width: 1200px;
   margin: 50px auto;
   border: 2px solid black;
-  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .right-section {
@@ -55,6 +22,8 @@ body {
   padding-right: 100px;
   background-color: azure;
   border-left: 2px solid black;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .about-me-section {
@@ -67,7 +36,6 @@ body {
 .name,
 .position {
   text-align: center;
-  /* text-transform: uppercase; */
 }
 
 .position {
@@ -103,8 +71,10 @@ body {
 
 .sidebar-section {
   background-color: rgb(167, 218, 200);
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   padding: 50px;
+  box-sizing: border-box;
 }
 
 .contacts-value {
@@ -129,6 +99,7 @@ body {
   fill: currentColor;
   margin-top: 5px;
 }
+
 .items {
   font-weight: bold;
 }
@@ -136,5 +107,36 @@ body {
 .item {
   font-weight: bold;
   display: inline;
-  padding-right: 100;
+  padding-right: 100px;
+}
+
+/* ===================== RESPONSIVE MOBILE ===================== */
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    border: none;
+    margin: 0 auto;
+  }
+
+  .sidebar-section {
+    order: -1;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px !important;
+    border: none !important;
+  }
+
+  .right-section {
+    width: 100% !important;
+    padding: 20px !important;
+    border: none !important;
+  }
+
+  .item {
+    display: block;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
 }
