@@ -35,7 +35,6 @@ body {
   max-width: 1200px; /* opțional, pentru desktop */
   margin: 50px auto;
   border: 2px solid black;
-  flex-wrap: wrap; /* adaugă pentru mobil */
 }
 
 .right-section {
