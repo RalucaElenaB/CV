@@ -1,10 +1,6 @@
-@media (max-width: 767px) {
-  .main-section {
-    flex-direction: column;
-    width: 100%;
-  }
-  .sidebar-section {
-    width: 100%;
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
   }
 }
 
