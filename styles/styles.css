@@ -74,8 +74,10 @@ body {
 
 .sidebar-section {
   background-color: rgb(167, 218, 200);
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   padding: 50px;
+  box-sizing: border-box;
 }
 
 .contacts-value {
