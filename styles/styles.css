@@ -29,7 +29,6 @@ body {
 .name,
 .position {
   text-align: center;
-  /* text-transform: uppercase; */
 }
 
 .position {
@@ -79,20 +78,13 @@ body {
   color: #fb6d3a;
 }
 
-.contacts-phone-icon {
-  background-color: white;
-  font-size: 50px;
-}
-
 .icon {
   display: inline-block;
   width: 1em;
   height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
   margin-top: 5px;
 }
+
 .items {
   font-weight: bold;
 }
@@ -103,7 +95,15 @@ body {
   padding-right: 100;
 }
 
-/* -------- Responsive pentru mobil -------- */
+/* Ascundem poza din sidebar pe mobil și mutăm poza sub titlu */
+.mobile-photo {
+  display: none;
+  max-width: 150px;
+  margin: 15px auto;
+  border-radius: 50%;
+}
+
+/* Responsive pentru mobil */
 @media (max-width: 768px) {
   body {
     margin: 0;
@@ -111,25 +111,10 @@ body {
   }
 
   .main-section {
-    flex-direction: column; /* Pune tot pe verticală */
+    flex-direction: column;
     width: 100%;
     margin: 0;
     border: none;
-  }
-
-  .sidebar-section {
-    order: 2;
-    max-width: 100%;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .sidebar-section img.image {
-    display: block;
-    margin: 0 auto 20px;
-    max-width: 150px;
-    height: auto;
-    border-radius: 50%;
   }
 
   .right-section {
@@ -143,24 +128,19 @@ body {
     margin-top: 10px;
     text-align: center;
   }
-}
 
-/* Ascundem poza mobilă pe desktop */
-.mobile-photo {
-  display: none;
-  max-width: 150px;
-  margin: 15px auto;
-  border-radius: 50%;
-}
-
-/* Aranjare pe mobil */
-@media (max-width: 768px) {
   .mobile-photo {
-    display: block;
+    display: block; /* Se afișează doar pe mobil */
   }
 
-  /* Ascundem poza din sidebar pe mobil */
+  .sidebar-section {
+    order: 2;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
   .sidebar-section .image {
-    display: none;
+    display: none !important; /* Ascundem poza din sidebar */
   }
 }
