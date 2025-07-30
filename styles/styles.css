@@ -78,42 +78,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Stil pentru nume și funcție sub poză */
-.sidebar-name {
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
-  color: #222;
-}
-
-.sidebar-position {
-  font-size: 1.1rem;
-  text-align: center;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-/* Aranjare pe mobil */
-@media (max-width: 768px) {
-  .main-section {
-    flex-direction: column;
-  }
-
-  .sidebar-section {
-    order: -1; /* Poza + numele apar primele */
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  /* Ascundem numele și funcția din secțiunea principală (dacă mai există) */
-  .right-section .name,
-  .right-section .position {
-    display: none;
-  }
-}
-
 .contacts-value {
   font-style: normal;
   font-weight: 700;
@@ -149,12 +113,12 @@ body {
 /* Structura pentru mobil - schimb ordinea */
 @media (max-width: 768px) {
   .main-section {
+    order: 1; /* Sidebar-ul apare DUPĂ secțiunea principală */
     flex-direction: column;
     border: none;
   }
 
   .sidebar-section {
-    order: 1; /* Sidebar-ul apare DUPĂ secțiunea principală */
     width: 100%;
     max-width: 100%;
     padding: 15px;
