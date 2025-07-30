@@ -2,22 +2,16 @@ body {
   background-color: #e5e5e5;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
-  margin: 0;
-  padding: 0;
 }
 
-/* Container principal */
 .main-section {
   display: flex;
   flex-direction: row-reverse;
-  max-width: 1200px;
-  width: 100%;
-  margin: 20px auto;
+  width: 1200px;
+  margin: 50px auto;
   border: 2px solid black;
-  background-color: white;
 }
 
-/* Secțiunea din dreapta */
 .right-section {
   padding-left: 50px;
   padding-right: 100px;
@@ -26,14 +20,16 @@ body {
 }
 
 .about-me-section {
-  padding: 15px 0;
-  margin: 20px 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .name,
 .position {
   text-align: center;
-  margin: 5px 0;
+  /* text-transform: uppercase; */
 }
 
 .position {
@@ -54,8 +50,7 @@ body {
 .education,
 .additional-education {
   background-color: rgb(167, 218, 200);
-  padding: 5px;
-  margin-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .education-item,
@@ -68,12 +63,10 @@ body {
   display: inline;
 }
 
-/* Sidebar-ul */
 .sidebar-section {
-  flex: 1;
   background-color: rgb(167, 218, 200);
   width: 100%;
-  max-width: 1200px;
+  max-width: 370px;
   padding: 50px;
   box-sizing: border-box;
 }
