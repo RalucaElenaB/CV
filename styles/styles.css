@@ -143,15 +143,15 @@ body {
   .sidebar-section .image {
     display: none !important; /* Ascundem poza din sidebar */
   }
-}
 
-/* Stilizare liste pentru sidebar */
-.sidebar-section ul {
-  list-style-type: disc; /* Păstrează bulinele clasice */
-  padding-left: 20px; /* Adaugă spațiu față de margine */
-  margin: 10px 0;
-  font-size: 14px; /* Font mai compact */
-  line-height: 1.6; /* Spațiu între rânduri */
+  /* Stilizare liste pentru sidebar */
+  .sidebar-section ul {
+    list-style-type: disc; /* Păstrează bulinele clasice */
+    padding-left: 20px; /* Adaugă spațiu față de margine */
+    margin: 10px 0;
+    font-size: 14px; /* Font mai compact */
+    line-height: 1.6; /* Spațiu între rânduri */
+  }
 }
 
 /* Ajustare elemente individuale */
