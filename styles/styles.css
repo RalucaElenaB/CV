@@ -1,11 +1,3 @@
-@media (max-width: 768px) {
-  .sidebar-section {
-    width: 100% !important;
-    padding: 20px !important;
-    max-width: 100% !important;
-  }
-}
-
 body {
   background-color: #e5e5e5;
   font-family: "Montserrat", sans-serif;
@@ -18,33 +10,24 @@ body {
 .main-section {
   display: flex;
   flex-direction: row-reverse;
-  /*width: 1200px;
-  margin: 50px auto;
-  border: 2px solid black;*/
-
+  max-width: 1200px;
   width: 100%;
   margin: 20px auto;
   border: 2px solid black;
-  background: white;
+  background-color: white;
 }
 
 /* Secțiunea din dreapta */
 .right-section {
-  /*padding-left: 50px;
+  padding-left: 50px;
   padding-right: 100px;
-  background-color: azure;
-  border-left: 2px solid black;*/
-  flex: 2;
-  padding: 20px;
   background-color: azure;
   border-left: 2px solid black;
 }
 
 .about-me-section {
-  padding-bottom: 15px;
-  padding-top: 15px;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  padding: 15px 0;
+  margin: 20px 0;
 }
 
 .name,
@@ -71,9 +54,8 @@ body {
 .education,
 .additional-education {
   background-color: rgb(167, 218, 200);
-  /*padding-bottom: 5px;*/
   padding: 5px;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .education-item,
@@ -88,14 +70,11 @@ body {
 
 /* Sidebar-ul */
 .sidebar-section {
-  /*background-color: rgb(167, 218, 200);
-  width: 100%;
-  max-width: 370px;
-  padding: 50px;
-  box-sizing: border-box;*/
   flex: 1;
   background-color: rgb(167, 218, 200);
-  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px;
   box-sizing: border-box;
 }
 
@@ -131,14 +110,19 @@ body {
   padding-right: 100;
 }
 
-/* RESPONSIVE DESIGN */
-
-/* Pentru tablete și telefoane */
-@media (max-width: 992px) {
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
   .main-section {
-    flex-direction: column;
+    flex-direction: column; /* Pune sidebar-ul sub secțiunea principală */
     border: none;
     margin: 0;
+  }
+
+  .sidebar-section {
+    max-width: 100%;
+    width: 100%;
+    padding: 15px;
+    order: -1; /* Sidebar-ul apare primul pe mobil */
   }
 
   .right-section {
@@ -146,15 +130,8 @@ body {
     padding: 15px;
   }
 
-  .sidebar-section {
-    width: 100%;
-    max-width: 100%;
-    padding: 15px;
-    order: -1; /* Sidebar-ul vine primul pe mobil */
-  }
-
   h1.name {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   h3.position {
@@ -162,14 +139,9 @@ body {
   }
 }
 
-/* Pentru telefoane mici */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   body {
     font-size: 14px;
-  }
-
-  .main-section {
-    padding: 0;
   }
 
   img.image {
@@ -181,9 +153,5 @@ body {
 
   .contacts-value {
     font-size: 12px;
-  }
-
-  h1.name {
-    font-size: 1.5rem;
   }
 }
