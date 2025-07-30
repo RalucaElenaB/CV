@@ -144,3 +144,23 @@ body {
     text-align: center;
   }
 }
+
+/* Ascundem poza mobilă pe desktop */
+.mobile-photo {
+  display: none;
+  max-width: 150px;
+  margin: 15px auto;
+  border-radius: 50%;
+}
+
+/* Aranjare pe mobil */
+@media (max-width: 768px) {
+  .mobile-photo {
+    display: block;
+  }
+
+  /* Ascundem poza din sidebar pe mobil */
+  .sidebar-section .image {
+    display: none;
+  }
+}
