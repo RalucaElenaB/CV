@@ -110,48 +110,34 @@ body {
   padding-right: 100;
 }
 
-/* --- RESPONSIVE --- */
+/* Structura pentru mobil - schimb ordinea */
 @media (max-width: 768px) {
   .main-section {
-    flex-direction: column; /* Pune sidebar-ul sub secțiunea principală */
+    flex-direction: column;
     border: none;
-    margin: 0;
   }
 
   .sidebar-section {
+    order: 1; /* Sidebar-ul apare DUPĂ secțiunea principală */
+    width: 100%;
     max-width: 100%;
-    width: 100%;
     padding: 15px;
-    order: -1; /* Sidebar-ul apare primul pe mobil */
+    text-align: center;
   }
 
-  .right-section {
-    border-left: none;
-    padding: 15px;
-  }
-
-  h1.name {
-    font-size: 1.5rem;
-  }
-
-  h3.position {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-
-  img.image {
-    max-width: 150px;
-    width: 100%;
+  .sidebar-section img.image {
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto;
   }
 
-  .contacts-value {
-    font-size: 12px;
+  /* Mutăm numele sub poză */
+  .sidebar-section::after {
+    content: "Raluca Elena Buliga\\A Software Engineer (C#)";
+    white-space: pre;
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
   }
 }
