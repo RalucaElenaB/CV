@@ -144,3 +144,33 @@ body {
     display: none !important; /* Ascundem poza din sidebar */
   }
 }
+
+/* Stilizare liste pentru sidebar */
+.sidebar-section ul {
+  list-style-type: disc; /* Păstrează bulinele clasice */
+  padding-left: 20px; /* Adaugă spațiu față de margine */
+  margin: 10px 0;
+  font-size: 14px; /* Font mai compact */
+  line-height: 1.6; /* Spațiu între rânduri */
+}
+
+/* Ajustare elemente individuale */
+.sidebar-section li {
+  margin-bottom: 2px; /* Spațiu între elementele listei */
+}
+
+/* Pentru linkurile din sidebar (în Specializations și Languages) */
+.sidebar-section a {
+  color: #fb6d3a; /* Portocaliu (ca restul designului) */
+  text-decoration: none; /* Scoate sublinierea */
+  font-weight: bold;
+}
+
+/* Responsivitate - pe mobil fontul mai mic */
+@media (max-width: 768px) {
+  .sidebar-section ul {
+    font-size: 13px;
+    line-height: 1.4;
+    padding-left: 15px; /* Puțin mai îngust pe mobil */
+  }
+}
