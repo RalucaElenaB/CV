@@ -10,19 +10,32 @@ body {
   background-color: #e5e5e5;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
+  margin: 0;
+  padding: 0;
 }
 
+/* Container principal */
 .main-section {
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
+  /*width: 1200px;
   margin: 50px auto;
+  border: 2px solid black;*/
+
+  width: 100%;
+  margin: 20px auto;
   border: 2px solid black;
+  background: white;
 }
 
+/* Secțiunea din dreapta */
 .right-section {
-  padding-left: 50px;
+  /*padding-left: 50px;
   padding-right: 100px;
+  background-color: azure;
+  border-left: 2px solid black;*/
+  flex: 2;
+  padding: 20px;
   background-color: azure;
   border-left: 2px solid black;
 }
@@ -37,7 +50,7 @@ body {
 .name,
 .position {
   text-align: center;
-  /* text-transform: uppercase; */
+  margin: 5px 0;
 }
 
 .position {
@@ -58,7 +71,9 @@ body {
 .education,
 .additional-education {
   background-color: rgb(167, 218, 200);
-  padding-bottom: 5px;
+  /*padding-bottom: 5px;*/
+  padding: 5px;
+  margin: 10px 0;
 }
 
 .education-item,
@@ -71,11 +86,16 @@ body {
   display: inline;
 }
 
+/* Sidebar-ul */
 .sidebar-section {
-  background-color: rgb(167, 218, 200);
+  /*background-color: rgb(167, 218, 200);
   width: 100%;
   max-width: 370px;
   padding: 50px;
+  box-sizing: border-box;*/
+  flex: 1;
+  background-color: rgb(167, 218, 200);
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -109,4 +129,61 @@ body {
   font-weight: bold;
   display: inline;
   padding-right: 100;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Pentru tablete și telefoane */
+@media (max-width: 992px) {
+  .main-section {
+    flex-direction: column;
+    border: none;
+    margin: 0;
+  }
+
+  .right-section {
+    border-left: none;
+    padding: 15px;
+  }
+
+  .sidebar-section {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    order: -1; /* Sidebar-ul vine primul pe mobil */
+  }
+
+  h1.name {
+    font-size: 1.8rem;
+  }
+
+  h3.position {
+    font-size: 1.2rem;
+  }
+}
+
+/* Pentru telefoane mici */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .main-section {
+    padding: 0;
+  }
+
+  img.image {
+    max-width: 150px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  .contacts-value {
+    font-size: 12px;
+  }
+
+  h1.name {
+    font-size: 1.5rem;
+  }
 }
