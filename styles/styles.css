@@ -118,7 +118,7 @@ body {
   }
 
   .sidebar-section {
-    order: 1;
+    order: 2;
     max-width: 100%;
     padding: 20px;
     text-align: center;
@@ -133,7 +133,7 @@ body {
   }
 
   .right-section {
-    order: 2;
+    order: 1;
     padding: 20px;
     border: none;
   }
