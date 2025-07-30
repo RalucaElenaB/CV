@@ -102,3 +102,63 @@ body {
   display: inline;
   padding-right: 100;
 }
+
+/* --- Responsive pentru mobil --- */
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column; /* Pune tot pe verticală */
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  /* Poza sus */
+  .sidebar-section {
+    order: 1;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Numele și funcția sub poză */
+  .right-section .name,
+  .right-section .position {
+    order: 2;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  /* Secțiunea About Me */
+  .about-me-section {
+    order: 3;
+  }
+
+  /* Work Experience */
+  .right-section > div:nth-of-type(2) {
+    order: 4;
+  }
+
+  /* Contactele */
+  .contact-section {
+    order: 5;
+  }
+
+  /* Tech Skills */
+  .sidebar-section > div:nth-of-type(2) {
+    order: 6;
+  }
+
+  /* Soft Skills */
+  .sidebar-section > div:nth-of-type(3) {
+    order: 7;
+  }
+
+  /* Specializations */
+  .sidebar-section > div:nth-of-type(4) {
+    order: 8;
+  }
+
+  /* Languages */
+  .sidebar-section > div:nth-of-type(5) {
+    order: 9;
+  }
+}
