@@ -110,15 +110,17 @@ body {
   padding-right: 100;
 }
 
-/* Structura pentru mobil - schimb ordinea */
+/* RESPONSIVE pentru mobil */
 @media (max-width: 768px) {
   .main-section {
-    order: 1; /* Sidebar-ul apare DUPĂ secțiunea principală */
-    flex-direction: column;
+    flex-direction: column; /* Stack pe vertical */
     border: none;
+    width: 100%;
   }
 
+  /* Facem poza să fie primul element */
   .sidebar-section {
+    order: -1; /* Sidebar-ul apare primul, dar vom păstra doar poza */
     width: 100%;
     max-width: 100%;
     padding: 15px;
@@ -127,17 +129,32 @@ body {
 
   .sidebar-section img.image {
     display: block;
-    margin: 0 auto;
+    max-width: 180px;
+    width: 100%;
+    margin: 0 auto 20px;
   }
 
-  /* Mutăm numele sub poză */
-  .sidebar-section::after {
-    content: "Raluca Elena Buliga\\A Software Engineer (C#)";
-    white-space: pre;
+  /* Ascundem tot restul sidebarului, îl mutăm mai jos */
+  .sidebar-section > *:not(img.image) {
+    display: none; /* Ascundem temporar pe mobil */
+  }
+
+  /* Reafișăm conținutul sidebarului DUPĂ right-section */
+  .sidebar-content-mobile {
     display: block;
-    font-weight: bold;
+    background-color: rgb(167, 218, 200);
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  /* Stiluri pentru text */
+  h1.name {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  h3.position {
     font-size: 1.2rem;
-    margin-top: 10px;
-    color: #333;
+    text-align: center;
   }
 }
