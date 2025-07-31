@@ -103,6 +103,24 @@ body {
   border-radius: 50%;
 }
 
+.image {
+  margin: -10px;
+  width: 300px; /* redimensionează imaginea */
+  border-radius: 50px; /* colțuri rotunjite */
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); /* umbră */
+  transition: transform 0.3s ease; /* tranziție la hover */
+}
+
+.image:hover {
+  transform: scale(1.05); /* efect de mărire la hover */
+}
+
+.intro-about-me,
+.work-experience-descripton {
+  text-indent: 30px; /* aliniat la începutul paragrafului */
+  line-height: 1.6; /* opțional: spațiere între rânduri pentru lizibilitate */
+}
+
 /* Responsive pentru mobil */
 @media (max-width: 768px) {
   body {
@@ -174,22 +192,4 @@ body {
     padding-left: 15px; /* Puțin mai îngust pe mobil */
     list-style: none;
   }
-}
-
-.image {
-  margin: -10px;
-  width: 300px; /* redimensionează imaginea */
-  border-radius: 50px; /* colțuri rotunjite */
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); /* umbră */
-  transition: transform 0.3s ease; /* tranziție la hover */
-}
-
-.image:hover {
-  transform: scale(1.05); /* efect de mărire la hover */
-}
-
-.intro-about-me,
-.work-experience-descripton {
-  text-indent: 30px; /* aliniat la începutul paragrafului */
-  line-height: 1.6; /* opțional: spațiere între rânduri pentru lizibilitate */
 }
